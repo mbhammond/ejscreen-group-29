@@ -26,6 +26,8 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>% clean_names()
 ```{r}
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
+  scale_fill_gradient(low = "lightskyblue1", high = "darkorchid4") +
+  theme_minimal() +
   labs(x = "Percent White (%)",
        y = "Pollution Burden Score",
        title = "Pollution Burden and Percent White Population")
