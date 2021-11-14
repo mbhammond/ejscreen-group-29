@@ -5,8 +5,8 @@ date: "11/14/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r setup, include=FALSE, warnings = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warnings = FALSE, message = FALSE)
 
 library(tidyverse)
 library(janitor)
@@ -30,7 +30,10 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   theme_minimal() +
   labs(x = "Percent White (%)",
        y = "Pollution Burden Score",
-       title = "Pollution Burden and Percent White Population")
+       title = "Pollution Burden and Percent White Population",
+       caption = "Figure 1. Pollution Burden Score (1-100) 
+       in relation to percent white (%) of population
+       within California census tracks.")
   
 ```
 
