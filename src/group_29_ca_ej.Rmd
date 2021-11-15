@@ -37,3 +37,7 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   
 ```
 
+
+There is a negative correlation between white population percentage and pollution burden score. As white population increases, pollution burden score decreases.
+
+Data citation: U.S. Census Bureau (2010). CalEnviroScreen 3.0 Demographics. Retrieved from https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30.
